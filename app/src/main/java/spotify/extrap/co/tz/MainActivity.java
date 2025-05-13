@@ -1,8 +1,12 @@
 package spotify.extrap.co.tz;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
@@ -20,6 +24,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
+        // Match status bar and nav bar to the screen background
+        Window window = getWindow();
+
+        // Clear translucent status flag and draw system bar backgrounds
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+
+        // Set status bar and nav bar colors to match your screen background
+        window.setStatusBarColor(Color.parseColor("#121212"));
+        window.setNavigationBarColor(Color.parseColor("#121212"));
 
         // Install splash screen before super.onCreate
         SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
