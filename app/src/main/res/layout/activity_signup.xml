@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#121212"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    tools:context=".SignupActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="200dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create your account"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="sans-serif-medium"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:backgroundTint="#CCCCCC"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:backgroundTint="#CCCCCC"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#888888"
+            android:inputType="textPassword"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:backgroundTint="#1DB954"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+</ScrollView>
