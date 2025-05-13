@@ -63,6 +63,9 @@
             android:fontFamily="sans-serif-medium"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
+            android:paddingVertical="15dp"
+            android:textFontWeight="700"
+            android:textSize="16sp"
             tools:ignore="HardcodedText" />
 
     </LinearLayout>
